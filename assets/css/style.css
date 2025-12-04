@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  --color-gold-400: #D4AF37;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #B08D55;
+  --color-dark: #1A1A1A;
+  --color-cream: #F9F8F6;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-dark);
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-500);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-600);
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 20s infinite alternate;
+}
+
+@keyframes pulseSlow {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
+/* --- NAVIGATION BAR STYLES --- */
+
+#navbar {
+  transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Common transitions for children elements */
+#navbar .nav-item, 
+#navbar .logo-main, 
+#navbar .logo-sub, 
+#navbar svg {
+  transition: color 0.4s ease;
+}
+
+/* Scrolled State: Solid White Background, Dark Text */
+#navbar.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#navbar.scrolled .nav-item,
+#navbar.scrolled .nav-item a,
+#navbar.scrolled .logo-main,
+#navbar.scrolled svg {
+  color: var(--color-dark);
+}
+
+#navbar.scrolled .logo-sub {
+  color: var(--color-gold-600);
+}
+
+/* Transparent State: Transparent Background, White Text */
+#navbar.transparent {
+  background-color: transparent;
+  box-shadow: none;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#navbar.transparent .nav-item,
+#navbar.transparent .nav-item a,
+#navbar.transparent .logo-main,
+#navbar.transparent svg {
+  color: #ffffff;
+}
+
+#navbar.transparent .logo-sub {
+  color: var(--color-gold-400);
+}
