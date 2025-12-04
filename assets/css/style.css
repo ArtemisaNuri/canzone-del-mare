@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 :root {
@@ -16,20 +15,27 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Playfair Display', serif;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-gold-500);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-gold-600);
 }
@@ -53,25 +59,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes pulseSlow {
-  from { transform: scale(1); }
-  to { transform: scale(1.1); }
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
 }
 
-/* --- NAVIGATION BAR STYLES --- */
 
 #navbar {
   transition: background-color 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* Common transitions for children elements */
-#navbar .nav-item, 
-#navbar .logo-main, 
-#navbar .logo-sub, 
+#navbar .nav-item,
+#navbar .logo-main,
+#navbar .logo-sub,
 #navbar svg {
   transition: color 0.4s ease;
 }
 
-/* Scrolled State: Solid White Background, Dark Text */
 #navbar.scrolled {
   background-color: #ffffff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
@@ -90,7 +98,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-gold-600);
 }
 
-/* Transparent State: Transparent Background, White Text */
 #navbar.transparent {
   background-color: transparent;
   box-shadow: none;
@@ -107,4 +114,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar.transparent .logo-sub {
   color: var(--color-gold-400);
+}
+
+#navbar.transparent .nav-item .absolute a {
+  color: #1A1A1A !important;
+}
+
+#navbar.transparent .nav-item .absolute a:hover {
+  color: #B08D55 !important;
 }

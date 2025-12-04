@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,51 +40,59 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body class="bg-cream text-dark antialiased">
-  
+
   <nav id="navbar" class="fixed top-0 w-full z-50 transparent transition-all duration-300 bg-transparent">
     <div class="container mx-auto px-6 flex justify-between items-center h-20">
-      
+
       <div class="hidden xl:flex items-center gap-6 text-[11px] font-bold uppercase tracking-widest nav-item z-20">
         <a href="#" class="hover:text-gold-500 transition-colors">Home</a>
-        
+
         <div class="relative group">
           <a href="#" class="flex items-center gap-1 hover:text-gold-500 transition-colors py-6">
             Appartamenti <i data-lucide="chevron-down" class="w-3 h-3"></i>
           </a>
-          <div class="absolute top-full left-0 bg-white text-dark shadow-lg py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-            <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600 border-b border-gray-50">Monolocali</a>
-            <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600 border-b border-gray-50">Bilocali</a>
+          <div
+            class="absolute top-full left-0 bg-white text-dark shadow-lg py-2 min-w-[200px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <a href="#"
+              class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600 border-b border-gray-50">Monolocali</a>
+            <a href="#"
+              class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600 border-b border-gray-50">Bilocali</a>
             <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600">Trilocali</a>
           </div>
         </div>
-  
+
         <a href="#" class="hover:text-gold-500 transition-colors">Camere Hotel</a>
         <a href="#" class="hover:text-gold-500 transition-colors">Offerte</a>
-  
+
         <div class="relative group">
           <a href="#" class="flex items-center gap-1 hover:text-gold-500 transition-colors py-6">
             Listino <i data-lucide="chevron-down" class="w-3 h-3"></i>
           </a>
-          <div class="absolute top-full left-0 bg-white text-dark shadow-lg py-2 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-            <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600 border-b border-gray-50">Listino Villaggio</a>
+          <div
+            class="absolute top-full left-0 bg-white text-dark shadow-lg py-2 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+            <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600 border-b border-gray-50">Listino
+              Villaggio</a>
             <a href="#" class="block px-6 py-3 hover:bg-gray-50 hover:text-gold-600">Memorandum Viaggiatore</a>
           </div>
         </div>
       </div>
-  
+
       <div class="absolute left-1/2 top-0 pt-4 transform -translate-x-1/2 text-center z-30">
         <img src="assets/img/logo/logo.png" alt="Logo" class="w-32 h-auto object-contain mx-auto">
       </div>
-  
-      <div class="hidden xl:flex items-center gap-6 text-[11px] font-bold uppercase tracking-widest nav-item z-20 ml-auto">
+
+      <div
+        class="hidden xl:flex items-center gap-6 text-[11px] font-bold uppercase tracking-widest nav-item z-20 ml-auto">
         <a href="#" class="hover:text-gold-500 transition-colors">Servizi</a>
-        
+
         <div class="relative group">
           <a href="#" class="flex items-center gap-1 hover:text-gold-500 transition-colors py-6">
             Territorio <i data-lucide="chevron-down" class="w-3 h-3"></i>
           </a>
-          <div class="absolute top-full right-0 bg-white text-dark shadow-lg py-2 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 text-left">
+          <div
+            class="absolute top-full right-0 bg-white text-dark shadow-lg py-2 min-w-[240px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 text-left">
             <a href="#" class="block px-6 py-2 hover:bg-gray-50 hover:text-gold-600">Vieste</a>
             <a href="#" class="block px-6 py-2 hover:bg-gray-50 hover:text-gold-600">Spiagge del Gargano</a>
             <a href="#" class="block px-6 py-2 hover:bg-gray-50 hover:text-gold-600">Parco Nazionale</a>
@@ -93,25 +102,25 @@
             <a href="#" class="block px-6 py-2 hover:bg-gray-50 hover:text-gold-600">Escursioni</a>
           </div>
         </div>
-  
+
         <a href="#" class="hover:text-gold-500 transition-colors">Dove Siamo</a>
         <a href="#" class="hover:text-gold-500 transition-colors">Contatti</a>
-        
+
         <div class="pl-4 border-l border-white/20 ml-2 flex gap-4">
           <i data-lucide="search" class="w-4 h-4 cursor-pointer hover:text-gold-500"></i>
         </div>
       </div>
-  
+
       <button id="mobile-menu-toggle" class="xl:hidden flex items-center ml-auto nav-item z-30 text-white">
         <i data-lucide="menu" class="w-8 h-8 cursor-pointer"></i>
       </button>
-  
+
     </div>
-  
+
     <div id="mobile-menu" class="xl:hidden bg-white text-dark border-t border-gray-200 hidden shadow-lg">
       <div class="container mx-auto px-6 py-6 space-y-5 text-[12px] font-semibold uppercase tracking-widest">
         <a href="#" class="block py-2 border-b border-gray-100">Home</a>
-  
+
         <div class="space-y-2 border-b border-gray-100 pb-3">
           <button class="w-full text-left py-1 text-[11px] text-gray-500">Appartamenti</button>
           <div class="pl-3 space-y-1 text-[11px] font-normal normal-case tracking-normal text-gray-700">
@@ -120,10 +129,10 @@
             <a href="#" class="block py-1">Trilocali</a>
           </div>
         </div>
-  
+
         <a href="#" class="block py-2 border-b border-gray-100">Camere Hotel</a>
         <a href="#" class="block py-2 border-b border-gray-100">Offerte</a>
-  
+
         <div class="space-y-2 border-b border-gray-100 pb-3">
           <button class="w-full text-left py-1 text-[11px] text-gray-500">Listino</button>
           <div class="pl-3 space-y-1 text-[11px] font-normal normal-case tracking-normal text-gray-700">
@@ -131,9 +140,9 @@
             <a href="#" class="block py-1">Memorandum Viaggiatore</a>
           </div>
         </div>
-  
+
         <a href="#" class="block py-2 border-b border-gray-100">Servizi</a>
-  
+
         <div class="space-y-2 border-b border-gray-100 pb-3">
           <button class="w-full text-left py-1 text-[11px] text-gray-500">Territorio</button>
           <div class="pl-3 space-y-1 text-[11px] font-normal normal-case tracking-normal text-gray-700">
@@ -146,10 +155,10 @@
             <a href="#" class="block py-1">Escursioni</a>
           </div>
         </div>
-  
+
         <a href="#" class="block py-2 border-b border-gray-100">Dove Siamo</a>
         <a href="#" class="block py-2 border-b border-gray-100">Contatti</a>
-  
+
         <button class="mt-2 inline-flex items-center gap-2 text-[11px] text-gray-700">
           <i data-lucide="search" class="w-4 h-4"></i>
           Cerca
@@ -157,30 +166,27 @@
       </div>
     </div>
   </nav>
-  
+
 
   <header class="relative h-screen w-full overflow-hidden">
     <div class="absolute inset-0 bg-black">
-<video 
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  class="absolute inset-0 w-full h-full object-cover opacity-70"
->
-  <source src="assets/videos/spot-compressed.webm" type="video/webm" />
-  <source src="assets/videos/spot-compressed.mp4" type="video/mp4" />
-</video>
+      <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <source src="assets/videos/spot-compressed.webm" type="video/webm" />
+        <source src="assets/videos/spot-compressed.mp4" type="video/mp4" />
+      </video>
 
-      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=3270" class="absolute inset-0 w-full h-full object-cover opacity-60 hidden" alt="Vieste Mare">
+      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=3270"
+        class="absolute inset-0 w-full h-full object-cover opacity-60 hidden" alt="Vieste Mare">
     </div>
-    
+
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-      <span class="text-gold-400 uppercase tracking-[0.4em] text-sm md:text-base mb-6 fade-in-up" style="animation-delay: 0.2s;">
+      <span class="text-gold-400 uppercase tracking-[0.4em] text-sm md:text-base mb-6 fade-in-up"
+        style="animation-delay: 0.2s;">
         Benvenuti a La Canzone del Mare
       </span>
-      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 max-w-5xl leading-tight fade-in-up" style="animation-delay: 0.4s;">
-        Villaggio turistico <br/><span class="italic font-light text-4xl md:text-6xl">3 stelle sul mare a Vieste</span>
+      <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 max-w-5xl leading-tight fade-in-up"
+        style="animation-delay: 0.4s;">
+        Villaggio turistico <br /><span class="italic font-light text-4xl md:text-6xl">3 stelle sul mare a Vieste</span>
       </h1>
     </div>
 
@@ -193,20 +199,24 @@
           <div class="flex items-center gap-8 text-xs uppercase tracking-widest">
             <div class="flex flex-col cursor-pointer group">
               <span class="text-gold-500 mb-1 group-hover:text-gold-400 transition-colors">Prenota Soggiorno</span>
-              <span class="flex items-center gap-2 group-hover:text-gold-400 transition-colors">Seleziona Date <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></span>
+              <span class="flex items-center gap-2 group-hover:text-gold-400 transition-colors">Seleziona Date <i
+                  data-lucide="chevron-down" class="w-3.5 h-3.5"></i></span>
             </div>
             <div class="w-px h-8 bg-white/20"></div>
             <div class="flex flex-col cursor-pointer group">
               <span class="text-gray-400 mb-1 group-hover:text-gold-500 transition-colors">Richiedi Info</span>
-              <span class="flex items-center gap-2 group-hover:text-gold-400 transition-colors">Contattaci <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></span>
+              <span class="flex items-center gap-2 group-hover:text-gold-400 transition-colors">Contattaci <i
+                  data-lucide="chevron-down" class="w-3.5 h-3.5"></i></span>
             </div>
             <div class="w-px h-8 bg-white/20"></div>
             <div class="flex flex-col cursor-pointer group">
               <span class="text-gray-400 mb-1 group-hover:text-gold-500 transition-colors">Offerte Speciali</span>
-              <span class="flex items-center gap-2 group-hover:text-gold-400 transition-colors">Vedi Promozioni <i data-lucide="chevron-down" class="w-3.5 h-3.5"></i></span>
+              <span class="flex items-center gap-2 group-hover:text-gold-400 transition-colors">Vedi Promozioni <i
+                  data-lucide="chevron-down" class="w-3.5 h-3.5"></i></span>
             </div>
           </div>
-          <button class="bg-white text-dark px-8 py-3 text-xs font-bold uppercase tracking-widest hover:bg-gold-500 hover:text-white transition-colors">
+          <button
+            class="bg-white text-dark px-8 py-3 text-xs font-bold uppercase tracking-widest hover:bg-gold-500 hover:text-white transition-colors">
             Verifica Disponibilità
           </button>
         </div>
@@ -217,23 +227,32 @@
   <section class="py-24 px-6 md:px-12 bg-cream">
     <div class="container mx-auto max-w-7xl">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]">
-        <div class="md:col-span-2 bg-white p-8 md:p-12 rounded-[2rem] shadow-sm flex flex-col justify-center relative overflow-hidden group">
-          <div class="absolute top-0 right-0 w-64 h-64 bg-gold-100/30 rounded-full -mr-32 -mt-32 transition-transform group-hover:scale-150 duration-1000"></div>
+        <div
+          class="md:col-span-2 bg-white p-8 md:p-12 rounded-[2rem] shadow-sm flex flex-col justify-center relative overflow-hidden group">
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-gold-100/30 rounded-full -mr-32 -mt-32 transition-transform group-hover:scale-150 duration-1000">
+          </div>
           <div class="relative z-10">
             <div class="flex items-center gap-3 mb-6">
               <span class="w-8 h-px bg-gold-500"></span>
               <span class="uppercase tracking-widest-xl text-xs text-gold-600 font-bold">Vieste, Gargano</span>
             </div>
-            <h2 class="font-serif text-4xl md:text-5xl leading-tight text-dark mb-6">Un'Oasi di Relax <br><span class="italic text-gold-500 text-3xl md:text-4xl font-light">tra natura e mare</span></h2>
+            <h2 class="font-serif text-4xl md:text-5xl leading-tight text-dark mb-6">Un'Oasi di Relax <br><span
+                class="italic text-gold-500 text-3xl md:text-4xl font-light">tra natura e mare</span></h2>
             <p class="text-gray-600 font-light text-lg leading-relaxed text-justify max-w-2xl">
-              Un luogo esclusivo che, sposandosi con la natura incontaminata, lo rende unico nel suo genere. Il Villaggio è immerso nella bellezza del promontorio pugliese del Gargano, all’interno dell’omonimo Parco Nazionale, a soli 800 metri dal centro di Vieste.
+              Un luogo esclusivo che, sposandosi con la natura incontaminata, lo rende unico nel suo genere. Il
+              Villaggio è immerso nella bellezza del promontorio pugliese del Gargano, all’interno dell’omonimo Parco
+              Nazionale, a soli 800 metri dal centro di Vieste.
             </p>
           </div>
         </div>
 
-        <div class="md:row-span-2 bg-dark text-white p-8 md:p-10 rounded-[2rem] shadow-lg flex flex-col justify-between relative overflow-hidden group">
+        <div
+          class="md:row-span-2 bg-dark text-white p-8 md:p-10 rounded-[2rem] shadow-lg flex flex-col justify-between relative overflow-hidden group">
           <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold-400 to-gold-600"></div>
-          <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/5 rounded-full blur-3xl group-hover:bg-gold-500/10 transition-colors duration-700"></div>
+          <div
+            class="absolute -bottom-10 -right-10 w-40 h-40 bg-white/5 rounded-full blur-3xl group-hover:bg-gold-500/10 transition-colors duration-700">
+          </div>
           <div>
             <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-8 text-gold-400">
               <i data-lucide="check-circle-2" class="w-6 h-6"></i>
@@ -242,47 +261,70 @@
             <p class="text-gray-400 text-xs uppercase tracking-widest mb-8">5 Motivi Esclusivi</p>
             <ul class="space-y-5">
               <li class="flex items-start gap-3 group/item">
-                <span class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">01.</span> 
-                <span class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Posizione strategica sul mare e vicino al centro</span>
+                <span
+                  class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">01.</span>
+                <span
+                  class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Posizione
+                  strategica sul mare e vicino al centro</span>
               </li>
               <li class="flex items-start gap-3 group/item">
-                <span class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">02.</span> 
-                <span class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Servizi ideali per famiglie e bambini</span>
+                <span
+                  class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">02.</span>
+                <span
+                  class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Servizi
+                  ideali per famiglie e bambini</span>
               </li>
               <li class="flex items-start gap-3 group/item">
-                <span class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">03.</span> 
-                <span class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Animazione, sport e divertimento</span>
+                <span
+                  class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">03.</span>
+                <span
+                  class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Animazione,
+                  sport e divertimento</span>
               </li>
               <li class="flex items-start gap-3 group/item">
-                <span class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">04.</span> 
-                <span class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Spiaggia privata e piscina</span>
+                <span
+                  class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">04.</span>
+                <span
+                  class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Spiaggia
+                  privata e piscina</span>
               </li>
               <li class="flex items-start gap-3 group/item">
-                <span class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">05.</span> 
-                <span class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Ospitalità autentica pugliese</span>
+                <span
+                  class="text-gold-500 font-bold font-serif text-lg group-hover/item:translate-x-1 transition-transform">05.</span>
+                <span
+                  class="text-gray-300 text-sm leading-tight pt-1 group-hover/item:text-white transition-colors">Ospitalità
+                  autentica pugliese</span>
               </li>
             </ul>
           </div>
-          <button class="mt-10 w-full py-4 bg-gold-600 hover:bg-gold-500 text-white text-xs font-bold uppercase tracking-widest transition-colors rounded-xl flex items-center justify-center gap-2">
+          <button
+            class="mt-10 w-full py-4 bg-gold-600 hover:bg-gold-500 text-white text-xs font-bold uppercase tracking-widest transition-colors rounded-xl flex items-center justify-center gap-2">
             Prenota Ora <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </button>
         </div>
 
         <div class="relative overflow-hidden rounded-[2rem] shadow-sm min-h-[300px] group">
-          <img src="assets/img/spiagga/sunset.JPG" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" alt="Sunset Vieste">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity"></div>
+          <img src="assets/img/spiagga/sunset.JPG"
+            class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+            alt="Sunset Vieste">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-60 group-hover:opacity-40 transition-opacity">
+          </div>
           <div class="absolute bottom-6 left-6">
             <span class="text-white text-xs uppercase tracking-widest font-bold drop-shadow-md">Il Tramonto</span>
           </div>
         </div>
 
-        <div class="bg-[#F5F5F0] p-8 rounded-[2rem] shadow-sm flex flex-col justify-center border border-stone-200 relative group hover:border-gold-300 transition-colors">
-          <i data-lucide="quote" class="absolute top-6 right-6 text-gold-500/20 w-12 h-12 group-hover:text-gold-500/30 transition-colors"></i>
+        <div
+          class="bg-[#F5F5F0] p-8 rounded-[2rem] shadow-sm flex flex-col justify-center border border-stone-200 relative group hover:border-gold-300 transition-colors">
+          <i data-lucide="quote"
+            class="absolute top-6 right-6 text-gold-500/20 w-12 h-12 group-hover:text-gold-500/30 transition-colors"></i>
           <h5 class="text-gold-600 uppercase tracking-widest text-[10px] mb-4 font-bold flex items-center gap-2">
             <i data-lucide="sparkles" class="w-3 h-3"></i> La Storia
           </h5>
           <p class="text-dark font-serif italic text-lg leading-relaxed z-10">
-            "La Canzone del Mare deve il nome a Micaela... quando scopre una conchiglia regalata dalla mamma, innesca un magnifico viaggio negli abissi marini con quel suono..."
+            "La Canzone del Mare deve il nome a Micaela... quando scopre una conchiglia regalata dalla mamma, innesca un
+            magnifico viaggio negli abissi marini con quel suono..."
           </p>
         </div>
       </div>
@@ -299,40 +341,41 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center">
         <div class="relative h-[500px] overflow-hidden group">
-          <img 
-            src="assets/img/spiagga/IMG_7051.jpg" 
-            alt="Spiaggia Privata" 
-            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
+          <img src="assets/img/spiagga/IMG_7051.jpg" alt="Spiaggia Privata"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
         </div>
         <div class="p-12 md:p-20 bg-cream h-full flex flex-col justify-center">
           <h3 class="font-serif text-3xl mb-4">Spiaggia Privata</h3>
           <p class="text-gray-600 mb-8 font-light leading-relaxed">
-            A pochissimi metri dalla struttura, con un mare più volte Bandiera Blu. Godetevi il relax del nostro lido attrezzato, dove il mare cristallino incontra la sabbia dorata.
+            A pochissimi metri dalla struttura, con un mare più volte Bandiera Blu. Godetevi il relax del nostro lido
+            attrezzato, dove il mare cristallino incontra la sabbia dorata.
           </p>
           <div class="flex gap-4">
-            <button class="bg-transparent text-dark border border-dark hover:bg-dark hover:text-white uppercase tracking-widest text-xs font-bold py-4 px-8 transition-all duration-300 ease-in-out inline-flex items-center gap-2">Scopri di più</button>
-            <button class="hidden md:inline-flex text-dark border-b border-dark hover:text-gold-600 hover:border-gold-600 uppercase tracking-widest text-xs font-bold py-4 px-4 transition-colors">Contattaci</button>
+            <button
+              class="bg-transparent text-dark border border-dark hover:bg-dark hover:text-white uppercase tracking-widest text-xs font-bold py-4 px-8 transition-all duration-300 ease-in-out inline-flex items-center gap-2">Scopri
+              di più</button>
+            <button
+              class="hidden md:inline-flex text-dark border-b border-dark hover:text-gold-600 hover:border-gold-600 uppercase tracking-widest text-xs font-bold py-4 px-4 transition-colors">Contattaci</button>
           </div>
         </div>
       </div>
-      
+
       <div class="grid grid-cols-1 md:grid-cols-2 gap-0 items-center mt-12 md:mt-0">
         <div class="p-12 md:p-20 bg-dark text-white h-full flex flex-col justify-center order-2 md:order-1">
           <h3 class="font-serif text-3xl mb-4 text-gold-400">Servizi per Famiglie</h3>
           <p class="text-gray-300 mb-8 font-light leading-relaxed">
-            La vostra vacanza sarà accompagnata da giochi, sport e spettacoli all’aperto ed in anfiteatro. Un ambiente sicuro e divertente dove i bambini sono i protagonisti.
+            La vostra vacanza sarà accompagnata da giochi, sport e spettacoli all’aperto ed in anfiteatro. Un ambiente
+            sicuro e divertente dove i bambini sono i protagonisti.
           </p>
           <div class="flex gap-4">
-            <button class="bg-white text-dark border border-white hover:bg-dark hover:text-white hover:border-dark uppercase tracking-widest text-xs font-bold py-4 px-8 transition-all duration-300 ease-in-out inline-flex items-center gap-2">Scopri di più</button>
+            <button
+              class="bg-white text-dark border border-white hover:bg-dark hover:text-white hover:border-dark uppercase tracking-widest text-xs font-bold py-4 px-8 transition-all duration-300 ease-in-out inline-flex items-center gap-2">Scopri
+              di più</button>
           </div>
         </div>
         <div class="relative h-[500px] overflow-hidden group order-1 md:order-2">
-          <img 
-            src="assets/img/spiagga/famiglie.jpg" 
-            alt="Famiglia e Bambini" 
-            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
+          <img src="assets/img/spiagga/famiglie.jpg" alt="Famiglia e Bambini"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
         </div>
       </div>
     </div>
@@ -341,18 +384,17 @@
   <section class="py-24 bg-cream">
     <div class="container mx-auto px-6">
       <div class="text-center mb-16">
-        <span class="text-gold-600 uppercase tracking-widest text-xs block mb-3">Tante attività per adulti e bambini</span>
+        <span class="text-gold-600 uppercase tracking-widest text-xs block mb-3">Tante attività per adulti e
+          bambini</span>
         <h2 class="font-serif text-4xl text-dark">Attività e Divertimento</h2>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="group cursor-pointer">
           <div class="overflow-hidden mb-6 relative aspect-[3/4]">
-            <img 
-              src="assets/img/experiences/tenis.jpg" 
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-              alt="Campo da tennis sul mare"
-            >
+            <img src="assets/img/experiences/tenis.jpg"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Campo da tennis sul mare">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
           </div>
           <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">
@@ -362,31 +404,40 @@
             Sport, relax e divertimento
           </p>
         </div>
-        
+
         <div class="group cursor-pointer">
           <div class="overflow-hidden mb-6 relative aspect-[3/4]">
-            <img src="assets/img/experiences/IMG_3361.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Animazione">
+            <img src="assets/img/experiences/IMG_3361.jpg"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Animazione">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
           </div>
-          <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">Animazione</h3>
+          <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">
+            Animazione</h3>
           <p class="text-center text-xs uppercase tracking-widest text-gray-500">Divertimento affidabile</p>
         </div>
 
         <div class="group cursor-pointer">
           <div class="overflow-hidden mb-6 relative aspect-[3/4]">
-            <img src="assets/img/experiences/_F4A5444.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Campi Sportivi">
+            <img src="assets/img/experiences/_F4A5444.jpg"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Campi Sportivi">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
           </div>
-          <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">Campi Sportivi</h3>
+          <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">Campi
+            Sportivi</h3>
           <p class="text-center text-xs uppercase tracking-widest text-gray-500">Sport all'aria aperta</p>
         </div>
 
         <div class="group cursor-pointer">
           <div class="overflow-hidden mb-6 relative aspect-[3/4]">
-            <img src="assets/img/experiences/IMG_5680.JPG" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Spazi per Bambini">
+            <img src="assets/img/experiences/IMG_5680.JPG"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Spazi per Bambini">
             <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all"></div>
           </div>
-          <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">Spazi per Bambini</h3>
+          <h3 class="text-center font-serif text-xl mb-2 text-dark group-hover:text-gold-600 transition-colors">Spazi
+            per Bambini</h3>
           <p class="text-center text-xs uppercase tracking-widest text-gray-500">Giochi e sicurezza</p>
         </div>
       </div>
@@ -419,23 +470,34 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 h-auto md:h-[600px]">
-        <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl cursor-pointer h-[400px] md:h-auto">
-          <img src="assets/img/spiagga/1.jpg" alt="Scogliere Iconiche" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 transition-opacity duration-500"></div>
-          <div class="absolute bottom-8 left-8 right-8 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-            <span class="inline-block px-3 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest text-dark bg-white rounded-full">Iconico</span>
+        <div
+          class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl cursor-pointer h-[400px] md:h-auto">
+          <img src="assets/img/spiagga/1.jpg" alt="Scogliere Iconiche"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-8 left-8 right-8 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+            <span
+              class="inline-block px-3 py-1 mb-3 text-[10px] font-bold uppercase tracking-widest text-dark bg-white rounded-full">Iconico</span>
             <h3 class="text-white font-serif text-3xl md:text-4xl leading-tight mb-2">Scogliere del Gargano</h3>
-            <p class="text-white/80 font-light text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-              Uno spettacolo naturale scolpito dal vento e dal mare, dove la roccia bianca incontra l'azzurro cristallino.
+            <p
+              class="text-white/80 font-light text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+              Uno spettacolo naturale scolpito dal vento e dal mare, dove la roccia bianca incontra l'azzurro
+              cristallino.
             </p>
           </div>
         </div>
 
         <div class="relative group overflow-hidden rounded-xl cursor-pointer h-[300px] md:h-auto">
-          <img src="assets/img/spiagga/4.jpg" alt="Costa di Vieste" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
+          <img src="assets/img/spiagga/4.jpg" alt="Costa di Vieste"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
           <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
-          <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
-            <div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-4 scale-0 group-hover:scale-100 transition-transform duration-500">
+          <div
+            class="absolute inset-0 flex flex-col justify-center items-center text-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/40">
+            <div
+              class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-4 scale-0 group-hover:scale-100 transition-transform duration-500">
               <i data-lucide="map-pin" class="text-white w-5 h-5"></i>
             </div>
             <h3 class="text-white font-serif text-2xl">Costa di Vieste</h3>
@@ -443,10 +505,12 @@
         </div>
 
         <div class="relative group overflow-hidden rounded-xl cursor-pointer h-[300px] md:h-auto">
-          <img src="assets/img/spiagga/5.jpg" alt="Mare Smeraldo" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"/>
+          <img src="assets/img/spiagga/5.jpg" alt="Mare Smeraldo"
+            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-90"></div>
           <div class="absolute bottom-6 left-6">
-            <h3 class="text-white font-serif text-2xl mb-1 group-hover:text-gold-400 transition-colors">Mare Smeraldo</h3>
+            <h3 class="text-white font-serif text-2xl mb-1 group-hover:text-gold-400 transition-colors">Mare Smeraldo
+            </h3>
             <span class="text-white/70 text-xs uppercase tracking-widest">Scopri di più &rarr;</span>
           </div>
         </div>
@@ -456,8 +520,7 @@
 
   <section class="relative bg-white text-dark py-16 lg:py-24">
     <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-      
-      <!-- Sticky text block -->
+
       <div class="lg:sticky lg:top-24 self-start flex flex-col items-center text-center">
         <p class="text-xs md:text-sm tracking-[0.3em] uppercase text-gray-500 mb-4">
           Vivi il tuo tempo migliore e concediti tutto il riposo di cui hai bisogno.
@@ -466,74 +529,66 @@
           La Canzone del Mare
         </h2>
         <p class="text-sm md:text-base text-gray-600 max-w-xl">
-          Una cornice di verde, spiagge dorate e il suono del mare.  
+          Una cornice di verde, spiagge dorate e il suono del mare.
           La tua vacanza inizia qui.
         </p>
-  
-        <!-- Small hint text to make it more intuitive -->
+
         <p class="mt-6 text-[11px] uppercase tracking-[0.2em] text-gray-400">
           Scorri per scoprire le nostre atmosfere
         </p>
       </div>
-  
-      <!-- Scrolling photos column -->
+
       <div class="space-y-8 lg:space-y-10">
-        <!-- Foto 1 -->
         <figure class="relative h-[55vh] md:h-[60vh] overflow-hidden rounded-3xl bg-cream shadow-lg">
-          <img
-            src="assets/img/hero/_F4A4918.jpg"
-            alt="Vista panoramica de La Canzone del Mare"
-            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          />
-          <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 text-dark text-xs px-4 py-2 rounded-full uppercase tracking-[0.18em] shadow">
+          <img src="assets/img/hero/_F4A4918.jpg" alt="Vista panoramica de La Canzone del Mare"
+            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+          <figcaption
+            class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 text-dark text-xs px-4 py-2 rounded-full uppercase tracking-[0.18em] shadow">
             Vista sul villaggio
           </figcaption>
         </figure>
-  
-        <!-- Foto 2 -->
+
         <figure class="relative h-[55vh] md:h-[60vh] overflow-hidden rounded-3xl bg-cream shadow-lg">
-          <img
-            src="assets/img/spiagga/IMG_7051.jpg"
-            alt="Spiaggia privata del villaggio"
-            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          />
-          <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 text-dark text-xs px-4 py-2 rounded-full uppercase tracking-[0.18em] shadow">
+          <img src="assets/img/spiagga/IMG_7051.jpg" alt="Spiaggia privata del villaggio"
+            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+          <figcaption
+            class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 text-dark text-xs px-4 py-2 rounded-full uppercase tracking-[0.18em] shadow">
             Spiaggia privata
           </figcaption>
         </figure>
-  
-        <!-- Foto 3 -->
+
         <figure class="relative h-[55vh] md:h-[60vh] overflow-hidden rounded-3xl bg-cream shadow-lg">
-          <img
-            src="assets/img/experiences/IMG_5680.JPG"
-            alt="Spazi per relax e famiglie"
-            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-          />
-          <figcaption class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 text-dark text-xs px-4 py-2 rounded-full uppercase tracking-[0.18em] shadow">
+          <img src="assets/img/experiences/IMG_5680.JPG" alt="Spazi per relax e famiglie"
+            class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+          <figcaption
+            class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 text-dark text-xs px-4 py-2 rounded-full uppercase tracking-[0.18em] shadow">
             Relax & famiglie
           </figcaption>
         </figure>
       </div>
-  
+
     </div>
   </section>
-  
-  
+
+
   <section class="py-24 bg-cream">
     <div class="container mx-auto px-6">
       <div class="flex flex-col lg:flex-row gap-12 items-stretch">
         <div class="lg:w-1/3 flex flex-col justify-center py-8">
           <h2 class="font-serif text-5xl md:text-6xl lg:text-7xl text-dark mb-6 leading-none">
-            Camere <br/> <span class="italic font-light">& Suites</span>
+            Camere <br /> <span class="italic font-light">& Suites</span>
           </h2>
           <div class="flex gap-4 mb-8 text-dark">
             <i data-lucide="chevron-left" class="w-6 h-6 cursor-pointer hover:text-gold-500 transition-colors"></i>
             <i data-lucide="chevron-right" class="w-6 h-6 cursor-pointer hover:text-gold-500 transition-colors"></i>
           </div>
           <p class="text-gray-600 font-light text-lg leading-relaxed mb-10 pr-8">
-            Immersi nel verde del nostro villaggio e a pochi passi dal mare, i nostri alloggi offrono comfort, privacy e l’atmosfera autentica di una vacanza a Vieste. Scegli tra monolocali, bilocali e trilocali per vivere il soggiorno su misura per te.
+            Immersi nel verde del nostro villaggio e a pochi passi dal mare, i nostri alloggi offrono comfort, privacy e
+            l’atmosfera autentica di una vacanza a Vieste. Scegli tra monolocali, bilocali e trilocali per vivere il
+            soggiorno su misura per te.
           </p>
-          <a href="#" class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-dark border-b border-dark pb-1 hover:text-gold-600 hover:border-gold-600 transition-colors w-max">
+          <a href="#"
+            class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-dark border-b border-dark pb-1 hover:text-gold-600 hover:border-gold-600 transition-colors w-max">
             Scopri le Camere <i data-lucide="chevron-right" class="ml-2 w-4 h-4"></i>
           </a>
         </div>
@@ -541,7 +596,8 @@
         <div class="lg:w-2/3">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-full min-h-[500px]">
             <div class="relative group overflow-hidden cursor-pointer h-full">
-              <img src="assets/img/rooms/mono.jpg" alt="Monolocale" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"/>
+              <img src="assets/img/rooms/mono.jpg" alt="Monolocale"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
               <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
               <div class="absolute bottom-8 left-8 z-10 max-w-xs">
                 <h3 class="font-serif text-3xl text-white drop-shadow-md mb-1">Monolocale</h3>
@@ -552,23 +608,27 @@
             </div>
 
             <div class="relative group overflow-hidden cursor-pointer h-full">
-              <img src="assets/img/rooms/trilo.JPG" alt="Bilocale" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"/>
+              <img src="assets/img/rooms/trilo.JPG" alt="Bilocale"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
               <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
               <div class="absolute bottom-8 left-8 z-10 max-w-xs">
                 <h3 class="font-serif text-3xl text-white drop-shadow-md mb-1">Bilocale</h3>
                 <p class="text-white text-sm leading-snug drop-shadow-md opacity-90">
-                  La soluzione ideale per chi desidera più spazio: zona giorno luminosa, camera separata e affaccio sul verde.
+                  La soluzione ideale per chi desidera più spazio: zona giorno luminosa, camera separata e affaccio sul
+                  verde.
                 </p>
               </div>
             </div>
 
             <div class="relative group overflow-hidden cursor-pointer h-full">
-              <img src="assets/img/rooms/terrazi.JPG" alt="Trilocale" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"/>
+              <img src="assets/img/rooms/terrazi.JPG" alt="Trilocale"
+                class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
               <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
               <div class="absolute bottom-8 left-8 z-10 max-w-xs">
                 <h3 class="font-serif text-3xl text-white drop-shadow-md mb-1">Trilocale</h3>
                 <p class="text-white text-sm leading-snug drop-shadow-md opacity-90">
-                  Ampio e accogliente, ideale per famiglie. Veranda con vista e ambienti ariosi per una vacanza senza pensieri.
+                  Ampio e accogliente, ideale per famiglie. Veranda con vista e ambienti ariosi per una vacanza senza
+                  pensieri.
                 </p>
               </div>
             </div>
@@ -579,7 +639,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="py-24 bg-cream">
     <div class="container mx-auto px-6">
       <div class="flex flex-col md:flex-row items-center gap-12">
@@ -587,12 +647,14 @@
           <span class="text-gold-600 uppercase tracking-widest text-xs mb-4 block">Scopri il Territorio</span>
           <h2 class="font-serif text-4xl mb-6 text-dark">Ottima Posizione</h2>
           <p class="text-gray-600 leading-relaxed mb-8 text-sm">
-            Il Village La Canzone del Mare sorge a 800 metri dal centro di Vieste e a 10 minuti a piedi dal molo, dove potrete prendere un traghetto per le isole Tremiti.
+            Il Village La Canzone del Mare sorge a 800 metri dal centro di Vieste e a 10 minuti a piedi dal molo, dove
+            potrete prendere un traghetto per le isole Tremiti.
           </p>
-          
+
           <div class="space-y-6">
             <div class="flex items-start gap-4">
-              <div class="min-w-[50px] h-[50px] rounded-full border border-gold-400 flex items-center justify-center text-gold-600 font-serif text-xl italic bg-white">
+              <div
+                class="min-w-[50px] h-[50px] rounded-full border border-gold-400 flex items-center justify-center text-gold-600 font-serif text-xl italic bg-white">
                 <i data-lucide="map-pin" class="w-5 h-5"></i>
               </div>
               <div>
@@ -601,7 +663,8 @@
               </div>
             </div>
             <div class="flex items-start gap-4">
-              <div class="min-w-[50px] h-[50px] rounded-full border border-gold-400 flex items-center justify-center text-gold-600 font-serif text-xl italic bg-white">
+              <div
+                class="min-w-[50px] h-[50px] rounded-full border border-gold-400 flex items-center justify-center text-gold-600 font-serif text-xl italic bg-white">
                 <i data-lucide="sun" class="w-5 h-5"></i>
               </div>
               <div>
@@ -610,14 +673,17 @@
               </div>
             </div>
           </div>
-          
-          <button class="mt-8 text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 hover:text-gold-600 hover:border-gold-600 transition-colors">
+
+          <button
+            class="mt-8 text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 hover:text-gold-600 hover:border-gold-600 transition-colors">
             Vedi Mappa
           </button>
         </div>
 
         <div class="md:w-2/3 w-full h-[400px] bg-gray-200 relative overflow-hidden group">
-          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Map Location" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"/>
+          <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop"
+            alt="Map Location"
+            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
           <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div class="w-4 h-4 bg-gold-500 rounded-full animate-ping absolute"></div>
             <div class="w-4 h-4 bg-gold-500 rounded-full relative border-2 border-white"></div>
@@ -638,46 +704,58 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="group cursor-pointer bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div class="h-64 overflow-hidden relative">
-            <img src="assets/img/hero/DJI_0048-compressed.jpg" alt="Romantic Getaway" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+            <img src="assets/img/hero/DJI_0048-compressed.jpg" alt="Romantic Getaway"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
           </div>
           <div class="p-8 text-center relative">
-            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 text-xs uppercase tracking-widest">
+            <div
+              class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 text-xs uppercase tracking-widest">
               Speciale
             </div>
             <h3 class="font-serif text-2xl mb-4 group-hover:text-gold-600 transition-colors">Prenota Prima</h3>
             <p class="text-gray-500 text-sm mb-6">Assicurati la tua vacanza al miglior prezzo.</p>
-            <span class="text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 group-hover:border-gold-600 group-hover:text-gold-600 transition-colors">Vedi Dettagli</span>
+            <span
+              class="text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 group-hover:border-gold-600 group-hover:text-gold-600 transition-colors">Vedi
+              Dettagli</span>
           </div>
         </div>
 
         <div class="group cursor-pointer bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div class="h-64 overflow-hidden relative">
-            <img src="assets/img/experiences/CLD_5794.jpg" alt="Spa Retreat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+            <img src="assets/img/experiences/CLD_5794.jpg" alt="Spa Retreat"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
           </div>
           <div class="p-8 text-center relative">
-            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 text-xs uppercase tracking-widest">
+            <div
+              class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 text-xs uppercase tracking-widest">
               Relax
             </div>
             <h3 class="font-serif text-2xl mb-4 group-hover:text-gold-600 transition-colors">Settimana Azzurra</h3>
             <p class="text-gray-500 text-sm mb-6">Vivi il mare del Gargano con offerte esclusive.</p>
-            <span class="text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 group-hover:border-gold-600 group-hover:text-gold-600 transition-colors">Vedi Dettagli</span>
+            <span
+              class="text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 group-hover:border-gold-600 group-hover:text-gold-600 transition-colors">Vedi
+              Dettagli</span>
           </div>
         </div>
 
         <div class="group cursor-pointer bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div class="h-64 overflow-hidden relative">
-            <img src="assets/img/restaurants/_F4A5449.jpg" alt="Gourmet Experience" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"/>
+            <img src="assets/img/restaurants/_F4A5449.jpg" alt="Gourmet Experience"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
           </div>
           <div class="p-8 text-center relative">
-            <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 text-xs uppercase tracking-widest">
+            <div
+              class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-gold-500 text-white px-4 py-1 text-xs uppercase tracking-widest">
               Gusto
             </div>
             <h3 class="font-serif text-2xl mb-4 group-hover:text-gold-600 transition-colors">Sapori di Puglia</h3>
             <p class="text-gray-500 text-sm mb-6">Scopri la tradizione enogastronomica pugliese.</p>
-            <span class="text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 group-hover:border-gold-600 group-hover:text-gold-600 transition-colors">Vedi Dettagli</span>
+            <span
+              class="text-xs font-bold uppercase tracking-widest border-b border-dark pb-1 group-hover:border-gold-600 group-hover:text-gold-600 transition-colors">Vedi
+              Dettagli</span>
           </div>
         </div>
       </div>
@@ -723,18 +801,23 @@
           <h4 class="uppercase tracking-widest text-xs font-bold mb-6 text-dark">Iscrizione Newsletter</h4>
           <p class="text-gray-500 text-sm mb-4">Rimani aggiornato su offerte e novità.</p>
           <form class="space-y-4">
-            <input type="text" placeholder="Il tuo nome*" class="w-full bg-transparent border-b border-gray-300 py-2 outline-none text-sm placeholder-gray-400 focus:border-gold-500 transition-colors" />
-            <input type="email" placeholder="La tua email*" class="w-full bg-transparent border-b border-gray-300 py-2 outline-none text-sm placeholder-gray-400 focus:border-gold-500 transition-colors" />
+            <input type="text" placeholder="Il tuo nome*"
+              class="w-full bg-transparent border-b border-gray-300 py-2 outline-none text-sm placeholder-gray-400 focus:border-gold-500 transition-colors" />
+            <input type="email" placeholder="La tua email*"
+              class="w-full bg-transparent border-b border-gray-300 py-2 outline-none text-sm placeholder-gray-400 focus:border-gold-500 transition-colors" />
             <div class="flex items-start gap-2 text-xs text-gray-500">
               <input type="checkbox" id="privacy" class="mt-1">
-              <label for="privacy">Autorizzo il trattamento dei dati personali: <a href="#" class="underline hover:text-dark">Privacy Policy</a></label>
+              <label for="privacy">Autorizzo il trattamento dei dati personali: <a href="#"
+                  class="underline hover:text-dark">Privacy Policy</a></label>
             </div>
-            <button type="submit" class="bg-dark text-white text-xs font-bold uppercase tracking-widest py-3 px-6 hover:bg-gold-500 transition-colors w-full">Iscriviti</button>
+            <button type="submit"
+              class="bg-dark text-white text-xs font-bold uppercase tracking-widest py-3 px-6 hover:bg-gold-500 transition-colors w-full">Iscriviti</button>
           </form>
         </div>
       </div>
 
-      <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 uppercase tracking-wider">
+      <div
+        class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 uppercase tracking-wider">
         <p>&copy; 2025 Villaggio La Canzone del Mare • P.IVA 04167200718 • CIN: IT071060B200026645</p>
         <div class="flex gap-6 mt-4 md:mt-0">
           <a href="#" class="hover:text-dark">Privacy</a>
@@ -769,4 +852,5 @@
     }
   </script>
 </body>
+
 </html>
